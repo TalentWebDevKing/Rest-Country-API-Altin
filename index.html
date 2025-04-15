@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/c27c855421.js"
+			crossorigin="anonymous"
+		></script>
+		<title>REST Countries API</title>
+		<style>
+			@keyframes border {
+				0% {
+					outline-color: rgb(255, 255, 255);
+				}
+
+				100% {
+					outline-color: rgba(255, 255, 255, 0);
+				}
+			}
+
+			.attrbtn {
+				font-size: 1.5rem;
+				transition: 0.3s;
+				cursor: pointer;
+			}
+
+			.attrbtn:hover {
+				transform: scale(1.1);
+			}
+
+			#att {
+				display: none;
+			}
+
+			#att:checked ~ .att-container {
+				visibility: visible;
+				max-width: 500px;
+				max-height: 50px;
+			}
+
+			#att:checked ~ .attrbtn {
+				transform: scaleX(-1);
+			}
+
+			.att-container {
+				transition: 0.3s;
+				visibility: hidden;
+				max-width: 0;
+				max-height: 0;
+				overflow: hidden;
+			}
+
+			.attribution {
+				animation: border 4s infinite alternate;
+				outline: 2px solid rgb(255, 255, 255);
+				overflow: hidden;
+				display: flex;
+				align-items: center;
+				transition: 0.3s;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.274);
+				border-radius: 10px;
+				padding: 5px;
+				background-color: #14253d;
+				margin: 1rem;
+				font-size: 12px;
+				font-family: sans-serif;
+				text-align: center;
+				letter-spacing: 2px;
+				color: #599fda;
+			}
+
+			.attribution a {
+				position: relative;
+				display: inline-block;
+				transition: 0.3s;
+				color: #00fff7;
+				text-decoration: none;
+				font-weight: bold;
+			}
+
+			.attribution a::after {
+				transition: 0.3s;
+				content: ' ';
+				width: 0;
+				height: 2px;
+				background-color: rgb(255, 255, 255);
+				position: absolute;
+				inset: 0;
+				top: 17px;
+				left: 50%;
+			}
+
+			.attribution a:hover::after {
+				width: 100%;
+				transform: translateX(-50%);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app"></div>
+		<script type="module" src="/src/main.js"></script>
+		<div class="attribution">
+			<input type="checkbox" id="att" />
+
+			<div class="att-container">
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Restful Countries API</a
+				>. Coded by
+				<a href="https://www.frontendmentor.io/profile/KTrick01" target="_blank"
+					>Altin Deltina</a
+				>.
+			</div>
+			<label class="attrbtn" for="att">
+				<i class="fa-solid fa-angles-right"></i>
+			</label>
+		</div>
+	</body>
+</html>
