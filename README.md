@@ -1,6 +1,10 @@
 # RestCountries(Altin Deltina)
 
 This application fullfilled your requirements.(https://jm-test-assessment.vercel.app/#designs)
+Also, I finish the bonus feature mainly.
+
+github: https://github.com/TalentWebDevKing/Rest-Country-API-Altin
+site link: https://rest-country-api-altin.vercel.app/
 
 ## Installation Guide
 
@@ -18,25 +22,14 @@ A modern, responsive country explorer built with Vue 3, Pinia, Tailwind CSS, and
 ## 📁 Project Structure
 
 assets/icon-arrow-down.svg
-
 components/headerComponents.vue
-
 components/Home.test.js: contains unit tests for core functionalities (search, filters, UI behavior)
-
 composables/getGetData.js: a composable that fetches country data from the API and exposes it reactively
-
 router/index.js indicate the router of all the pages
-
 views/HomeView.vue: the main view that uses all components and handles filters, sorting, and pagination
-
-Aoo.vue: displays individual country data
-
+views/CountriesView.vue: displays individual country data
+views/BordersView.vue: display country details and their borders dynamically.
 store/index.js: manages global state (e.g., selected region, current page)
-
-
-
-
-
 
 ---
 
