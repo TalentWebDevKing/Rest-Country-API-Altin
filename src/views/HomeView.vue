@@ -358,13 +358,16 @@ $Shadow: 0 0 10px rgba(0, 0, 0, 0.199);
 		background-repeat: no-repeat;
 	}
 }
-
+.dark .sortBy, .dark .sortOrder {
+	background-color: #2b3743;
+;
+}
 .sort-controls {
     border-radius: 0.5rem;
     display: flex;
     overflow: hidden;
     align-items: center;
-	background-color: #2b3743;
+	background-color: transparent;
     width: 50%;
     gap: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.199);
@@ -375,7 +378,7 @@ $Shadow: 0 0 10px rgba(0, 0, 0, 0.199);
 	display: flex;
 	overflow: hidden;
 	align-items: center;
-	background-color: #2b3743;
+	background-color: #ffffff;
 	box-shadow: $Shadow;
 
 	&:focus-within {
